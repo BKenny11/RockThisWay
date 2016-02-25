@@ -1,34 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.evothings.cordovaibeacon" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
-<<<<<<< HEAD
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
+    <feature name="LocationManager">
+        <param name="android-package" value="com.unarin.cordova.beacon.LocationManager" />
     </feature>
-=======
->>>>>>> 22a9b1d68049dca4c2785cbf884442deea070c34
-    <allow-intent href="market:*" />
-    <name>HelloCordova</name>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
+    </feature>
+    <name>iBeacon</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Example app that monitors and ranges for beacons.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="mikael@evothings.com" href="http://evothings.com">
+        Mikael Kindborg
     </author>
     <content src="index.html" />
+    <xcontent src="http://192.168.43.131:4042" />
     <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-<<<<<<< HEAD
-=======
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
->>>>>>> 22a9b1d68049dca4c2785cbf884442deea070c34
+    <preference name="DisallowOverscroll" value="true" />
 </widget>

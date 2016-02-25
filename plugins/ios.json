@@ -7,9 +7,16 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+        "com.unarin.cordova.beacon": {
+            "PACKAGE_NAME": "com.evothings.cordovaibeacon"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "com.evothings.cordovaibeacon"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.evothings.cordovaibeacon"
+        }
+    }
 }
